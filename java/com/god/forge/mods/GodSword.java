@@ -31,7 +31,7 @@ public class GodSword extends Item {
 	}
 	public boolean onLeftClickEntity(ItemStack stack, EntityPlayer player, Entity entity){
 		int maxHp = (int) ((EntityLivingBase) entity).getHealth();
-		entity.attackEntityFrom(DamageSource.generic, maxHp/3);
+		entity.attackEntityFrom(DamageSource.generic, (maxHp/4)+10);
 		return true;
 	}
 }
