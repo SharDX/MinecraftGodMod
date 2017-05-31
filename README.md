@@ -1,2 +1,2 @@
 # MinecraftSampleZ
-Sameple Minecraft 
+Sameple Minecraft Mod Written in Java
