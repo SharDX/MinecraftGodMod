@@ -18,8 +18,8 @@ public class Main {
 	public static GodFood godFood;
 	public static GodBlock godBlock;
 	public static Item godSword;
-	public static final String MODID = "MyMods";
-	public static final String VERSION = "0.2";
+	public static final String MODID = "GodMod";
+	public static final String VERSION = "0.3";
 	@EventHandler
 	public void init(FMLInitializationEvent event){
 		MinecraftForge.EVENT_BUS.register(new AnvilKaboom());
