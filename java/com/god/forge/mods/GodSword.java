@@ -23,7 +23,11 @@ public class GodSword extends Item {
 	}
 	
 	public ItemStack onItemRightClick(ItemStack stack,World world, EntityPlayer player) {
-		 world.addWeatherEffect(new EntityLightningBolt(world, player.posX+2,player.posY,player.posZ));
+		 MovingObjectPosition trace = Minecraft.getMinecraft().getRenderViewEntity().rayTrace(200, 1.0F);
+		 int x = (int) trace.hitVec.xCoord;
+		 int y = (int) trace.hitVec.yCoord;
+		 int z = (int) trace.hitVec.zCoord;
+		 world.addWeatherEffect(new EntityLightningBolt(world, x, y, z));
 	     if (!player.capabilities.isCreativeMode){
 	    	 stack.stackSize--;
 	     }
